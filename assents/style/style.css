@@ -1,0 +1,392 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+:root{
+    --black: #222222;
+}
+
+.container {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 16px;
+    box-sizing: content-box;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 46px;
+    align-items: center;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0 189px;
+}
+
+.logo {
+    font-family: "Lato", sans-serif;
+    font-size: 32px;
+    font-weight: 900;
+    letter-spacing: -5px;
+    color: var(--black);
+    padding-bottom: 5px;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 0 70px;
+}
+
+.nav-list a{
+    font-family: "Lato", sans-serif;
+    color: var(--black);
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.nav-btns {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    display: flex;
+    gap: 0 5px;
+    background-color: #3A3A3B;
+    border-radius: 10px;
+    padding: 13px;
+}
+
+select {
+    background-color: #3A3A3B;
+    color: #fff;
+    border: none;
+    outline: none;
+    padding-right: 28px;
+}
+
+.hero-wrapper {
+    padding-top: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px 0;
+    max-width: 454px;
+}
+
+.hero-subtitle {
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 9px;
+    color: var(--black);
+}
+
+.hero-title {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 65px;
+    color: var(--black);
+}
+
+.hero-text {
+    font-weight: 400;
+    font-size: 18px;
+    color: #444444;
+    line-height: 47px;
+}
+
+.hero-btns {
+    display: flex;
+    gap: 0 53px;
+}
+
+.hero-btns a:nth-child(1) {
+    background-color: var(--black);
+    font-weight: 700;
+    font-size: 18px;
+    padding: 17px 70px;
+    color: #fff;
+}
+
+.hero-btns a:nth-child(2) {
+    white-space: nowrap;
+    color: var(--black);
+    font-weight: 700;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 0 19px;
+}
+
+.hero-btns > a > i {
+    font-size: 30px;
+}
+
+#podcast {
+    padding: 210px 0;
+}
+
+.main-podcast__wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 186px 0;
+}
+
+.podcast-wrapper {
+    display: flex;
+    align-items: end;
+    gap: 0 124px;
+}
+
+.podcast-contant {
+    max-width: 576px;
+}
+
+.podcast-title {
+    font-weight: 700;
+    font-size: 40px;
+    color: var(--black);
+}
+
+.podcast-text {
+    margin: 26px 0;
+    color: #444444;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 33px;
+}
+
+.podcast-btn {
+    display: inline-block;
+    background-color: transparent;
+    padding: 12px 60px;
+    border: 1px solid var(--black);
+    color: var(--black);
+    margin-top: 40px;
+    border-radius: 5px;
+}
+
+.podcast-img {
+    position: relative;
+}
+
+.podcast-card {
+    padding: 50px 40px;
+    position: absolute;
+    bottom: -120px;
+    right: -50px;
+    width: 303px;
+    height: 274px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.podcast-card-form {
+    max-width: 223px;
+    height: 62px;
+    padding: 12px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.podcast-card-form > input {
+    position: absolute;
+    bottom: -10px;
+    right: 20px;
+    appearance: none;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #2222221A;
+} 
+
+form > a {
+    position: absolute;
+    margin-top: 20px;
+    text-align: center;
+    background-color: black;
+    padding: 20px 50px;
+    color: #fff;
+}
+
+.podcast-card-form > input:checked {
+    background-image: url("../images/checked.svg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 15px;
+}
+
+.podcast-card-form > label {
+    display: flex;
+    flex-direction: column;
+}
+
+.podcast-card-form > label > input {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+    padding: 15px 0;
+    font-size: 15px;
+}
+
+.podcast-card-2 {
+    padding: 30px 50px;
+    position: absolute;
+    bottom: -120px;
+    left: -50px;
+    width: 400px;
+    height: 266px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.stars i {
+    color: #F7B500;
+}
+
+.podcast-card-2 > p {
+    margin-top: 33px;
+    margin-bottom: 42px;
+    color: #444444;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+.podcast-card__user {
+    padding-left: 55px;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 5px 0;
+}
+
+#live{
+    text-align: center;
+    padding-bottom: 166px;
+}
+
+.live-title {
+    font-weight: 600;
+    font-size: 36px;
+    color: #181539;
+}
+
+.live-text {
+    font-size: 15px;
+    font-weight: 400;
+    color: #444444;
+    margin-top: 20px;
+    margin-bottom: 74px;
+}
+
+iframe {
+    max-width: 1210px;
+    width: 100%;
+    height: 455px;
+}
+
+#blog {
+    padding-bottom: 116px;
+}
+
+.blog-cards {
+    display: flex;
+    gap: 0 40px;
+}
+
+.blog-card {
+    max-width: 300px;
+}
+
+.blog-title {
+    font-size: 40px;
+    color: #03014C;
+    text-align: center;
+}
+
+.blog-text {
+    font-size: 18px;
+    margin-top: 17px;
+    margin-bottom: 66px;
+    text-align: center;
+}
+
+.card-content {
+    margin-top: 26px;
+    max-width: 265px;
+}
+
+.card-title {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.card-text {
+    margin-top: 9px;
+    color: #444444;
+}
+
+footer {
+    background-color: #F5F5FF;
+}
+
+.footer-wrapper {
+    padding: 100px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-logo {
+    margin-bottom: 65px;
+}
+
+.footer-nav strong {
+    display: inline-block;
+    margin-bottom: 19px;
+}
+
+address a {
+    color: #13254A;
+    font-size: 14px;
+}
+
+.footer-list li {
+    list-style: none;
+    margin-top: 9px;
+}
+
+.footer-list li a {
+    color: hwb(0 0% 100% / 0.4);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.copyright {
+    padding: 60px 0;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    color: hwb(0 0% 100% / 0.5);
+}

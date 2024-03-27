@@ -2,3 +2,4 @@
 
 Beyond landing page home work
 Live view:
+https://beyond-landing-page.netlify.app/
